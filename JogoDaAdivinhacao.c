@@ -8,15 +8,15 @@ int main(){
     printf("***********************************\n");
 
     int numeroSecreto = 42;
-    int chute;
-    int tentativas;
+    int chute = 0;
+    int tentativas = 0;
 
     while(1){
-        printf("Tentativa %d\n", tentativas+1);
+        printf("Tentativa %d \n", tentativas + 1);
         printf("Chute um número: ");
 
         scanf("%d", &chute);
-        printf("Seu chute: %d\n", chute);
+        printf("Seu chute: %d \n", chute);
 
         if(chute < 0){
             printf("Chute < 0 - Não permitido");
@@ -27,14 +27,14 @@ int main(){
         int maior = chute > numeroSecreto;
 
         if(acertou){
-            printf("Correto!\n");
+            printf("Correto! \n");
             break;
         }
         else if(maior){
-            printf("Chute > Número Secreto\n");
+            printf("Chute > Número Secreto \n");
         }
         else{
-            printf("Chute < Número Secreto\n");
+            printf("Chute < Número Secreto \n");
         }
         tentativas++;
     }
